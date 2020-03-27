@@ -30,7 +30,7 @@
 - belongs_to :group
 - belongs_to :user
 
-## messageテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|string||
