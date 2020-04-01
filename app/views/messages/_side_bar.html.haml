@@ -2,14 +2,14 @@
   .chat-space__left-top
     .chat-space__left-top__side-big-box
       .chat-space__left-top__side-big-box__side-box-left
-        yasu
+        = current_user.name
       .chat-space__left-top__side-big-box__side-box-right
         .chat-space__left-top__side-big-box__side-box-right__edit
         = link_to "#" do
           %link{class: "far fa-edit"}
         .chat-space__left-top__side-big-box__side-box-right__cog
-        = link_to "#" do
-          %link{class: "fas fa-cog"}
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
   .chat-space__left-bottom
     .chat-space__left-bottom__groups
       .chat-space__left-bottom__groups__member
