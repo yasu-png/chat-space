@@ -54,4 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'font-awesome-sass'
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'devise'
-gem 'rake', '< 11.0'
+gem 'rake', '< 13.0'
+gem 'carrierwave'
+gem 'mini_magick', require: 'Mini_magick'

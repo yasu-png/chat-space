@@ -15,8 +15,8 @@
       .chat-space__left-bottom__groups__member
         - current_user.groups.each do |group|
           .chat-space__left-bottom__groups__new-message
-            = link_to "#" do
+            = link_to group_messages_path(group) do
               .group__name
                 = group.name
               .chat-space__left-bottom__groups
-                メッセージはまだありません。
+                = group.show_last_message
