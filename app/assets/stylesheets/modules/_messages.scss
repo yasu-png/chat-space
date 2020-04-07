@@ -105,6 +105,7 @@
     height: calc(100% - 190px);
     background-color: #fafafa;
     padding: 35px 40px;
+    overflow: scroll;
     &__boxes{
       padding-bottom: 40px;
       &__some{
