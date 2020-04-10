@@ -53,7 +53,6 @@ $('#new_message').on('submit', function(e){
      contentType: false
    })
     .done(function(data){
-      console.log(data)
       var html = buildHTML(data);
       $('.main-space__center-center').append(html);
       $('.main-space__center-center').animate({ scrollTop: $('.main-space__center-center')[0].scrollHeight});
@@ -66,7 +65,6 @@ $('#new_message').on('submit', function(e){
 });
   var reloadMessages = function() {
     var last_message_id = $('.main-space__center-center__boxes:last').data("message-id");
-    console.log(last_message_id)
     $.ajax({
       url: "api/messages",
       type: 'get',
