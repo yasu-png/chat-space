@@ -61,8 +61,7 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'devise'
 gem 'rake', '< 13.0'
 gem 'carrierwave'
-gem 'mini_magick', require: 'Mini_magick'
-
+gem 'mini_magick'
 group :production do
   gem 'unicorn', '5.4.1'
 end
