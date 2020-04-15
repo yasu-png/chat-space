@@ -4,8 +4,10 @@
       .main-space__center-top__box-left__left-top
         = @group.name
       .main-space__center-top__box-left__left-bottom
-        - @group.users.each do |user|
-          = user.name
+        Member :
+        .main-space__center-top__box-left__left-bottom_user
+          - @group.users.each do |user|
+            = user.name
     .main-space__center-top__box-right
       .main-space__center-top__box-right__btn
         = link_to edit_group_path(current_user) do
