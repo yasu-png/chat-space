@@ -10,7 +10,7 @@
             = user.name
     .main-space__center-top__box-right
       .main-space__center-top__box-right__btn
-        = link_to edit_group_path(current_user) do
+        = link_to edit_group_path(@group.id) do
           Edit
   .main-space__center-center
     = render @messages
